@@ -133,4 +133,9 @@
       - name: Display an error message if the two index files are not identical
         fail:
           msg: "Oops:(:( The downloaded index file from the webserver is different from the generated file on the disk !!!"
-        when: "diff_output.rc == 1"
+        when: "diff_output.rc == 1'
+
+
+
+
+
