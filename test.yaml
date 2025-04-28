@@ -9,7 +9,7 @@
   tasks:
     - name: Get the log file name
       ansible.builtin.shell: |
-        ls -t {{ log_dir | default('/home/stack) }}/tests/logs/*.log
+        ls -t {{ log_dir | default('/home/stack') }}/tests/logs/*.log
       register: logfile
       changed_when: logfile.rc != 0
       ignore_errors: true
