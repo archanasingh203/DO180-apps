@@ -31,11 +31,9 @@
 
         - name: Create the test result XML file
           ansible.builtin.copy:
-            dest: "{{ test_file_path }}/results.xml"
+            dest: "{{ test_file_path }}/results.xml"  
             content: |
               <testsuite>
               </testsuite>   
-
-
 
 
